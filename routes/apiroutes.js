@@ -14,8 +14,8 @@ router.post("/notes", function (req, res) {
   let newNote = {
     title: req.body.title,
     text: req.body.text,
-    id: Math.floor(Math.random() * 1000) // store note with randomly generated id
-  }
+    id: Math.floor(Math.random() * 1000), // store note with randomly generated id
+  };
 
   // push a new note to db.json with fs
   database.push(newNote);
