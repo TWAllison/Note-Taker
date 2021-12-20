@@ -1,4 +1,4 @@
-const router = require("express").router();
+const router = require("express").Router();
 const fs = require("fs");
 const { json } = require("express");
 let database = require("../db/db.json");
